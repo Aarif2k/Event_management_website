@@ -1,0 +1,16 @@
+{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+
+<div class="container p-3 text-center">
+    <h1>Book Your Events</h1>
+    <div class="form-container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <center>
+                <table class="form-table">
+                    {{form.as_table}} 
+                </table>
+            </center>   
+            <button class='btn'>Book Now</button>
+        </form>
+    </div>
+</div>  
